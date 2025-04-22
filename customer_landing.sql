@@ -17,5 +17,5 @@ WITH SERDEPROPERTIES (
     'mapping' = 'TRUE'
 )
          STORED AS INPUTFORMAT 'org.apache.hadoop.mapred.TextInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
-LOCATION 's3://mysank-bucket/customer/landing/'
+LOCATION 's3://sank-bucket13/customer/landing/'
 TBLPROPERTIES ('classification' = 'json');
