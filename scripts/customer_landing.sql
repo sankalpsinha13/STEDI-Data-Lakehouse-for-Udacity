@@ -7,7 +7,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `sank_base`.`customer_landing` (
   `registrationDate` bigint,
   `lastUpdateDate` bigint,
   `shareWithResearchAsOfDate` bigint,
-  `shareWithPublicAsOfDate` bigint
+  `shareWithPublicAsOfDate` bigint,
+  'shareWithFriendsAsOfDate' bigint
 )
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 WITH SERDEPROPERTIES (
